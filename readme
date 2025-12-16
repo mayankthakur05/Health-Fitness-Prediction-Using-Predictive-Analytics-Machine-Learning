@@ -1,0 +1,20 @@
+🏋️‍♂️ Health & Fitness Prediction Using Predictive Analytics & Machine Learning
+
+
+
+
+
+
+🌟 Project Overview
+
+This project predicts an individual's overall health and fitness status using machine learning and predictive analytics. It leverages health and lifestyle data to:
+
+Analyze health patterns with EDA (Exploratory Data Analysis)
+
+Train multiple machine learning models
+
+Determine the best-performing model
+
+Enable users to predict personal health & fitness through an interactive menu
+
+The goal is to provide a data-driven tool to monitor health and help make informed lifestyle decisions.
