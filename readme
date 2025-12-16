@@ -27,3 +27,46 @@ Visualize overall health condition distribution
 Analyze stress levels vs. health condition
 
 Correlation heatmap of numeric variables
+Machine Learning Models
+
+Logistic Regression
+
+K-Nearest Neighbors (KNN)
+
+Decision Tree (with pruned tree visualization)
+
+Random Forest (primary model for prediction)
+
+Predictive Analytics
+
+Predict Healthy / Not Healthy based on user inputs
+
+Calculates BMI automatically
+
+Provides probability-based predictions
+
+Model Evaluation
+
+Accuracy score and confusion matrix for each model
+
+Bar chart comparison to determine the best-performing model
+
+📂 Dataset
+
+File: Health_Fitness_Expanded_5000_CORRECT.csv
+
+Contents: 5000 records with features such as age, weight, height, BMI, sleep hours, stress level, alcohol & smoking habits, exercise routine, and self-rated overall health
+
+Target: Binary_Health – 1 for healthy, 0 for not healthy
+
+🛠 Technology Stack
+
+Language: Python 3.x
+
+Libraries:
+
+Data manipulation: pandas, numpy
+
+Visualization: matplotlib, seaborn
+
+Machine Learning: scikit-learn
