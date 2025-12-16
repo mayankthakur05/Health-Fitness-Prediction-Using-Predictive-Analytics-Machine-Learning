@@ -18,3 +18,12 @@ Determine the best-performing model
 Enable users to predict personal health & fitness through an interactive menu
 
 The goal is to provide a data-driven tool to monitor health and help make informed lifestyle decisions.
+
+📊 Features
+Exploratory Data Analysis (EDA)
+
+Visualize overall health condition distribution
+
+Analyze stress levels vs. health condition
+
+Correlation heatmap of numeric variables
