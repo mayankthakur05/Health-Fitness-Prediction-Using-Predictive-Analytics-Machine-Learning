@@ -236,9 +236,28 @@ def show_stress_vs_health():
 
 
 def show_correlation():
-    plt.figure(figsize=(12,8))
-    sns.heatmap(df.corr(), cmap="coolwarm")
-    plt.title("Correlation Heatmap")
+     important_cols = [
+        "Age",
+        "BMI",
+        "Stress(1-5)",
+        "Average Sleep Hours per Day",
+        "Smoking Habits",
+        "Alcohol Consumption",
+        "Weekly Exercise Duration (hours)",
+        "Binary_Health"
+    ]
+
+    plt.figure(figsize=(10, 8))
+    sns.heatmap(
+        df[important_cols].corr(),
+        annot=True,
+        cmap="coolwarm",
+        fmt=".2f",
+        linewidths=0.5
+    )
+
+    plt.title("Key Feature Correlation with Health", fontsize=14)
+    plt.tight_layout()
     plt.show()
 
 
@@ -344,6 +363,7 @@ while True:
     elif choice == 5:
         print("Exiting program. Thank you!")
         break
+
 
 
 
