@@ -218,10 +218,20 @@ def find_best_model():
 
 def show_health_distribution():
     plt.figure()
-    df['How would you rate your overall health condition?'].value_counts().plot(kind="bar")
+    health_map = {
+        0: "Very Healthy",
+        1: "Healthy",
+        2: "Average",
+        3: "Unhealthy"
+    }
+
+    counts = df['How would you rate your overall health condition?'].value_counts().sort_index()
+    counts.index = counts.index.map(health_map)
+    counts.plot(kind="bar")
     plt.title("Distribution of Overall Health Condition")
     plt.xlabel("Health Category")
     plt.ylabel("Count")
+    plt.xticks(rotation=0)
     plt.show()
 
 
@@ -363,6 +373,7 @@ while True:
     elif choice == 5:
         print("Exiting program. Thank you!")
         break
+
 
 
 
